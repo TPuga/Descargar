@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+function f_acabar {
+
+        echo    " ----------------------------------------- "
+        echo    "                                           "
+	echo -e "         \e[92mCOMPLETADO BLACKUP\e[0m     "
+	echo    "    Ha sido un placer $USER                "
+        echo    "   $(date)  BLACKUP Completada;            " >> log_blackup.txt
+        echo    " ----------------------------------------- "
+	exit
+}
+
+function f_salir {
+
+	 echo    " ----------------------------------------- "
+         echo    "         HAS ELEGIDO:                      "
+         echo -e "      \e[91mSALIR\e[0m                     "
+	 echo    "     Ha sido un placer $USER               "
+         echo    "  $(date) SALIR sin Completadar blackup;   " >> log_blackup.txt
+         echo    " ----------------------------------------- "
+         exit
+
+
+}
+

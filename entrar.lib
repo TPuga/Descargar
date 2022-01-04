@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+function f_entrar {
+
+        if [ "$USER" != "tony" ]
+        then
+
+                echo " NO AUTORIZADO $HOY " >> log_no.autorizado.txt
+		echo " seguro? tu no seras... ?????"
+		exit
+        fi
+                echo " USUARIO AUTORIZADO $USER  $(date)  " >> log_entrada.txt
+	        sleep 3
+}
+

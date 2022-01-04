@@ -1,0 +1,61 @@
+#!/bin/bash
+
+
+function f_empezar {
+
+        echo "| ***************************************** | "
+        echo "|                                           |"
+        echo "| Vamos a EMPEZAR con la copia de seguridad |"
+        echo "|                                           |"
+        echo "| ****************************************  |"
+	sleep 1
+	echo -e " \e[33m....\e[0m "
+	sleep 1
+	echo -e " \e[33m........\e[0m "
+	sleep 1
+	echo -e " \e[33m................\e[0m "
+}
+
+
+function f_presentacion {
+
+	echo    " ___________________________________________ "
+	echo    "|                                           |"
+	echo    "|    Script copia de seguridad -EXAMEN-     |"
+	echo    "|                                           |"
+	echo    "|    @@@@@@@@@@@@@@@@@@@@@@@@@@             |"
+	echo    "|               Autor:                      |"
+	echo -e "|             \e[36mToni Puga\e[0m                     |"
+	echo    "|___________________________________________|"
+	echo    "                                             "
+	echo    "                                             "
+	sleep 2
+}
+
+
+function f_limpiar {
+
+clear
+sleep 1
+
+}
+
+
+function f_incidencia {
+
+        echo    "| ***************************************** |"
+        echo    "|                                           |"
+        echo    "|          Dime:                            |"
+        echo -e "|               \e[91mINCIDENCIA\e[0m                  |"
+	echo    "|                                           |"
+        echo    "| ****************************************  |"
+        sleep 1
+        echo "."
+        sleep 1
+        echo "..."
+        sleep 1
+        echo "....."
+
+
+
+}

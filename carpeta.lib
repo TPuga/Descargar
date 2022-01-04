@@ -1,0 +1,34 @@
+#!/bin/bash
+
+
+function f_carpeta.copy {
+
+
+
+
+
+	if [ -e "$Carpeta" ];
+	then
+		echo " $(date) Carpeta esta creada " >> log_verificacion.txt
+
+	else
+		echo " $(date) Carpeta no esta creada " >> log_verificacion.txt
+
+	fi
+
+}
+
+
+function f_carpeta.logs {
+
+
+
+
+	if [ -e "$LOGS" ];
+	then
+		echo " $(date) Carpeta logs esta creada " >> log_verificacion.txt
+	else
+		echo " $(date) Carpeta logs no esta creada" >> log_verificacion.txt
+	fi
+
+}

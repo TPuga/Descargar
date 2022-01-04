@@ -1,0 +1,56 @@
+#!/bin/bash
+
+CNT=0
+function f_tratar {
+
+	if [ ! -e $1 ];
+	then
+		echo "FALLO $1"
+
+	fi
+		DIR=$(dirname $1)
+        	Nombre=$(basename $1)
+        	tamano=$(stat -c %s $1)
+		no= /directorio_secreto
+
+
+	if [ -e "$DIR" == "$no" ] &&  [ "$tamano" > 20 || < 50 ]
+	then
+	echo "no copiamos"
+
+	else
+
+
+
+
+	if [ -e "$Carpeta"/"$Nombre" ]
+        then
+                Tamano_copia=$(stat -c %s "$Carpeta"/"$Nombre")
+                if [ "$tamano" -eq "$Tamano_copia" ]
+                then
+                        echo " Mismo fichero "
+                        echo " Mismo nombre "$1" tamaño "$tamano" $DATE " >> log_igual.txt
+                else
+
+                        echo " Son diferentes "$1" $DATE  " >> log_dif.txt
+                fi
+
+        else
+
+
+
+		cp $1 $Carpeta
+			echo " COPIADO............ "
+        fi
+		CNT=$(("$CNT"+1))
+		echo " FICHERO es:        "$1"          "
+        	echo " NAME es:           "$NAME"       "
+		echo " TAMAÑO es:         "$SIZE"       "
+        	echo " DIRECTORIO es:     "$DIR" bytes  "
+		echo  " NUMERO copiados   "$CNT" veces  "
+
+
+
+
+	fi
+}
